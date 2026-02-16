@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Juuko Francis
+%-------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+%================ FONT =================
+\usepackage{fontspec}
+\setmainfont{Montserrat}
+
+%=============== PACKAGES ===============
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+
+%=============== PAGE SETUP ===============
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\multicolsep}{0pt}
+\setlength{\tabcolsep}{0pt}
+\raggedright
+\urlstyle{same}
+
+%=============== COLORS ==================
+\definecolor{headingred}{RGB}{75,0,130}
+\definecolor{underlinebrown}{RGB}{147,112,219}
+
+%=============== SECTION STYLE ===========
+\titleformat{\section}
+  {\scshape\raggedright\large\color{headingred}}
+  {}
+  {0em}
+  {}
+  [\vspace{-1pt}\color{underlinebrown}\titlerule]
+\titlespacing{\section}{0pt}{6pt}{6pt}
+
+
+%=============== CUSTOM COMMANDS =========
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+
+
+\newcommand{\resumeItemListStart}{
+\begin{justify}
+\begin{itemize}[leftmargin=3ex, rightmargin=2ex, itemsep=2pt]
+\small
+}
+
+\newcommand{\resumeItemListEnd}{
+\end{itemize}
+\end{justify}\vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+\begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{#1} & \textit{\footnotesize #4} \\
+\textit{\footnotesize #3} & \footnotesize #2
+\end{tabular*}
+\vspace{-2.4mm}
+}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\small$\bullet$}}$}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+%================ DOCUMENT ===============
+\begin{document}
+
+%================ HEADER =================
+\begin{tcolorbox}[
+    colback=headingred!5,
+    colframe=headingred!20,
+    arc=2mm,
+    boxrule=0.5pt,
+    left=3pt,
+    right=3pt,
+    top=3pt,
+    bottom=3pt
+]
+\parbox{\linewidth}{
+\begin{tabularx}{\linewidth}{X r}
+
+\begin{minipage}[t]{0.72\linewidth}
+\textbf{\color{headingred}\LARGE ANTHONY BYAMUGISHA}\\[1pt]
+\textbf{\small Data and BI Analyst}\\[-1pt]
+
+\scriptsize
+\faPhone\ +256 748 161 708 | +256 769 864 032\\ 
+\faEnvelope\ \href{mailto:byamugishanthony@gmail.com}{byamugishanthony@gmail.com}\\
+\faLinkedin\ \href{https://www.linkedin.com/in/byamugisha-anthony-820239333}{linkedin.com/in/byamugisha-anthony-820239333}\\
+\faMapMarker\ Makerere, Kampala, Uganda\\
+\faGlobe\ \href{https://anthonybyamugishadata-analyst.vercel.app/}{anthonybyamugishadata-analyst.vercel.app}\\
+\faGithub\ \href{https://github.com/anthonybyamugisha}{github.com/anthonybyamugisha}
+\end{minipage}
+&
+\raisebox{-0.5\height}{
+\begin{minipage}[t]{3.2cm}
+\vspace{-3mm}
+\begin{tikzpicture}
+\clip (1.6,1.6) circle (1.6cm);
+\node[anchor=center] at (1.6,1.6) {\includegraphics[width=3.2cm,height=3.2cm,keepaspectratio=false]{profile.png}};
+\end{tikzpicture}
+\end{minipage}
+}
+
+\end{tabularx}
+}
+\end{tcolorbox}
+
+%================ PROFILE =================
+\section{\faUser\ \textbf{SUMMARY}}
+\begin{itemize}[leftmargin=0.15in, itemsep=2pt]
+\normalsize{
+\item Junior Data Analyst Specializing in data analysis, business intelligence, and visualization.
+\item Open to Learning and a very Quick Learner
+\item Able to work collaboratively with cross-functional teams and effectively communicate
+}
+\end{itemize}
+
+%================ EDUCATION ===============
+\section{\faGraduationCap\ \textbf{Education}}
+\begin{itemize}[leftmargin=0mm, label={}]
+\resumeSubheading
+{Makerere University}{Kampala, Uganda}
+{Bachelor of Science in Computer Science}{2024 -- 2027}
+
+\resumeSubheading
+{WorldQuant University}{Online}
+{Data Science Lab}{Dec 2025 -- Present}
+
+\end{itemize}\vspace{2mm}
+
+%================ PROJECTS ==============
+\section{\faLaptopCode\ \textbf{Projects}}
+\begin{itemize}[leftmargin=0mm, label={}]
+
+\resumeSubheading
+{Algomind Hive – Predictive Analytics Project}{}
+{}{}
+\vspace{-3mm}
+\small{\href{https://algomindhive.onrender.com}{https://algomindhive.onrender.com}}\\
+\vspace{1mm}
+\textit{\footnotesize Tools: Python, Pandas, SQL, Django, scikit-learn}
+\vspace{-1mm}
+\resumeItemListStart
+\item Processed and integrated climate, hive, and market data to generate analytical insights
+\item Analyzed climate, hive, and market data to predict honey yield, colony health risks, and optimal selling periods
+\resumeItemListEnd
+
+\vspace{3mm}
+\item
+\begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{\large Sales Performance Dashboard} & \\
+\end{tabular*}
+\vspace{-3mm}
+\textit{\footnotesize Tools: Microsoft Excel}
+\vspace{1mm}
+\resumeItemListStart
+\item Processed and modeled multi-source sales data to create an interactive, real-time performance dashboard
+\item Visualized sales KPIs, trends, and comparisons with filtering and drill-down analysis by region, product, and date
+\resumeItemListEnd
+
+\end{itemize}\vspace{2mm}
+
+%================ SKILLS ==================
+\section{\faTools\ \textbf{Technical Skills}}
+\begin{itemize}[leftmargin=0.05in,label={}]
+\normalsize{
+\item \textbf{Languages}: Python | SQL
+\item \textbf{Libraries and Frameworks}: Django | Pandas | Numpy | Matplotlib | Scikit-Learn
+\item \textbf{Databases}: MySQL
+\item \textbf{Tools}: Excel | Power BI | Git | GitHub
+\item \textbf{Focus}: Data Wrangling, Cleaning and Modeling; Analysis and Visualization of Data
+}
+\end{itemize}
+
+%================ CERTIFICATES ===============
+\section{\faCertificate\ \textbf{Certificates}}
+\begin{itemize}[leftmargin=0mm, label={}]
+
+\resumeSubheading
+{Data Science and Analytics}{Issued: Dec 2025}
+{HP Life}{}
+
+\resumeSubheading
+{Business Analysis Basics}{Issued: Jan 2026}
+{Simplilearn}{}
+
+\resumeSubheading
+{Artificial Intelligence for Business}{Issued: Sep 2025}
+{Simplilearn}{}
+
+\end{itemize}\vspace{2mm}
+
+%================ LANGUAGES ===============
+\section{\faLanguage\ \textbf{LANGUAGES}}
+\begin{itemize}[leftmargin=0mm, label={}]
+\item
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}c@{\hspace{2cm}}l@{\extracolsep{\fill}}c@{\hspace{2cm}}l@{\extracolsep{\fill}}c@{}}
+\textbf{English} & \textcolor{headingred}{$\bullet\bullet\bullet\bullet$}\textcolor{gray!40}{$\bullet$} & 
+\textbf{Runyankole, Rukiga} & \textcolor{headingred}{$\bullet\bullet\bullet\bullet\bullet$} & 
+\textbf{Luganda} & \textcolor{headingred}{$\bullet\bullet\bullet\bullet$}\textcolor{gray!40}{$\bullet$} \\
+Proficient & & Native & & Proficient & \\
+\end{tabular*}
+\end{itemize}
+
+\end{document}
