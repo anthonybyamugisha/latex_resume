@@ -1,0 +1,102 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- PAGE ----------
+\usepackage[a4paper,margin=0.7in]{geometry}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{tikz}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+% ---------- FONT ----------
+\setmainfont{Montserrat}
+
+% ---------- COLORS ----------
+\definecolor{accent}{HTML}{4B0082}
+\definecolor{darktext}{HTML}{2E2E2E}
+\definecolor{lightgray}{HTML}{777777}
+
+% ---------- HYPERLINK SETTINGS ----------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=accent,
+    filecolor=accent
+}
+
+% ---------- DOCUMENT ----------
+\begin{document}
+\color{darktext}
+\setstretch{1.15}
+
+% ---------- HEADER ----------
+\begin{tikzpicture}
+\node[
+    fill=accent,
+    rounded corners=6pt,
+    inner sep=10pt,
+    text width=\linewidth
+] {
+    \color{white}
+    {\Huge \textbf{ANTHONY\hspace{0.3cm}BYAMUGISHA}}\\
+    \vspace{2pt}
+    {\Large Data and BI Analyst}
+};
+\end{tikzpicture}
+
+\vspace{4pt} % Reduced from 8pt to 4pt to fix space above email
+
+% ---------- CONTACT (LEFT ALIGNED) ----------
+\begin{flushleft}
+\faEnvelope\ \href{mailto:byamugishanthony@gmail.com}{byamugishanthony@gmail.com}\\
+\faPhone\ +256 748 161 708\\
+\faMapMarker*\ Makerere, Kampala, Uganda\\
+\faLinkedin\ \href{https://linkedin.com/in/byamugisha-anthony}{linkedin.com/in/byamugisha-anthony}\\
+\faGlobe\ \href{https://anthonybyamugishadata-analyst.vercel.app}{anthonybyamugishadata-analyst.vercel.app}\\
+\faGithub\ \href{https://github.com/anthonybyamugisha}{github.com/anthonybyamugisha}
+\end{flushleft}
+
+\vspace{6pt}
+{\color{accent}\hrule}
+\vspace{12pt}
+
+% ---------- RECIPIENT ----------
+To:\\
+Hiring Manager\\
+Bank of Uganda\\
+P.O. Box 7120,\\
+Kampala, Uganda
+
+\vspace{6pt}
+
+\textbf{Dear Hiring Manager,}
+
+\vspace{4pt}
+
+I am writing to express my interest in the Data Analyst Internship at the Bank of Uganda. I am eager to contribute my analytical skills while gaining hands-on experience in a professional, data-driven environment.
+
+\vspace{6pt}
+
+I am currently pursuing a Bachelor of Science in Computer Science at Makerere University, where I am in my second year of study. In addition, I am advancing my practical analytics skills through the Data Science Lab at WorldQuant University, where I work with real-world datasets involving data cleaning, exploratory data analysis, and statistical problem-solving. These experiences have provided me with a strong foundation in data analysis, business intelligence, and data visualization.
+
+\vspace{6pt}
+
+I am actively developing proficiency in Power BI, where I design interactive dashboards and reports to track KPIs, analyze performance, and support informed decision-making. I also have working knowledge of Python (Pandas, NumPy, Matplotlib), SQL, and Microsoft Excel, which I use to extract meaningful insights from structured datasets.
+
+\vspace{6pt}
+
+I am highly motivated, detail-oriented, and a fast learner with a strong desire to continuously improve my skills. I believe this internship at the Bank of Uganda would be an excellent opportunity to further develop my analytical capabilities while contributing value to your data and reporting initiatives.
+
+\vspace{8pt}
+
+Thank you for your time and consideration.
+
+\vspace{10pt}
+
+Yours sincerely,\\
+\vspace{2pt}
+Anthony Byamugisha
+
+\end{document}
